@@ -4,31 +4,11 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div>
-      <div className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            Justin Stokes
-          </NavLink>
+      <h1>React Challenge</h1>
 
-          <ul>
-            <li>
-              <NavLink exact to="/" className="nav-links">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/about" className="nav-links">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/contact" className="nav-links">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
     </div>
   );
 }
